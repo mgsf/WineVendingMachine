@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7CC7BB8-01B7-413C-AC5C-44462218CD7F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WineVendingMachine.Modules.ModuleName.Tests", "WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\WineVendingMachine.Modules.ModuleName.Tests.csproj", "{23E3776C-A876-40B5-9ED3-764BD6A649D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WineVendingMachine.Modules.SellWine.Tests", "WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\WineVendingMachine.Modules.SellWine.Tests.csproj", "{23E3776C-A876-40B5-9ED3-764BD6A649D0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{4A156A6D-716D-4B2C-849C-9548DD92ACB8}"
 EndProject

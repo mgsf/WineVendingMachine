@@ -4,9 +4,9 @@ using System.Text;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
-    public sealed class Money 
+    public sealed class Money : ValueObject<Money>
     {
-        //Assumption - Wine prices are rounded to nearest 10
+        //Assumption - Wine prices are rounded to nearest 10 Rupee
         public int TenRupeeCount { get; set; }
         public int TwentyRupeeCount { get; set; }
         public int FiftyRupeeCount { get; set; }
@@ -30,6 +30,14 @@ namespace WineVendingMachine.Modules.SellWine.Domain
             ThousandRupeeCount = thousandRupeeCount;
         }
 
+        public decimal Amount =>
+            TenRupeeCount * 10m +
+            TwentyRupeeCount * 20 +
+            FiftyRupeeCount * 50 +
+            HundredRupeeCount * 100 +
+            FiveHundredRupeeCount * 500 +
+            ThousandRupeeCount * 1000;
+
         public static Money operator +(Money money1, Money money2)
         {
             Money sum = new Money(
@@ -52,6 +60,30 @@ namespace WineVendingMachine.Modules.SellWine.Domain
                 money1.HundredRupeeCount - money2.HundredRupeeCount,
                 money1.FiveHundredRupeeCount - money2.FiveHundredRupeeCount,
                 money1.ThousandRupeeCount - money2.ThousandRupeeCount);
+        }
+
+        protected override bool EqualsCore(Money other)
+        {
+            return TenRupeeCount == other.TenRupeeCount
+                && TwentyRupeeCount == other.TwentyRupeeCount
+                && FiftyRupeeCount == other.FiftyRupeeCount
+                && HundredRupeeCount == other.HundredRupeeCount
+                && FiveHundredRupeeCount == other.FiveHundredRupeeCount
+                && ThousandRupeeCount == other.ThousandRupeeCount;
+        }
+
+        protected override int GetHashCodeCore()
+        {
+            unchecked
+            {
+                int hashCode = TenRupeeCount;
+                hashCode = (hashCode * 397) ^ TwentyRupeeCount;
+                hashCode = (hashCode * 397) ^ FiftyRupeeCount;
+                hashCode = (hashCode * 397) ^ HundredRupeeCount;
+                hashCode = (hashCode * 397) ^ FiveHundredRupeeCount;
+                hashCode = (hashCode * 397) ^ ThousandRupeeCount;
+                return hashCode;
+            }
         }
     }
 }

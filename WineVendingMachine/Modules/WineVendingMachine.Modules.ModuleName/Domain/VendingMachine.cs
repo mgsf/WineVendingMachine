@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
-    public sealed class VendingMachine
+    public sealed class VendingMachine : Entity
     {
         public void InsertMoney() { }
 

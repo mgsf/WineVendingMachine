@@ -4,7 +4,7 @@ using Moq;
 using Prism.Regions;
 using Xunit;
 
-namespace WineVendingMachine.Modules.ModuleName.Tests.ViewModels
+namespace WineVendingMachine.Modules.SellWine.Tests.ViewModels
 {
     public class ViewAViewModelFixture
     {

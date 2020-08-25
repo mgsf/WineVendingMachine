@@ -1,9 +1,9 @@
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\bin\Debug\netcoreapp3.1\WineVendingMachine.Core.deps.json
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\bin\Debug\netcoreapp3.1\WineVendingMachine.Core.dll
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\bin\Debug\netcoreapp3.1\WineVendingMachine.Core.pdb
-C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.csprojAssemblyReference.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.AssemblyInfoInputs.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.AssemblyInfo.cs
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.csproj.CoreCompileInputs.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.dll
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.pdb
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\WineVendingMachine.Core\obj\Debug\netcoreapp3.1\WineVendingMachine.Core.csprojAssemblyReference.cache
