@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HItOdQbLrRq9hrCbSM1b5dbl7uB1eA1trG9+pSFTUiYTRvaunaGeLT/I5bUWrShkp6IcE+HkbeTQguzz1imqqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gayan\\source\\repos\\WineVendingMachine\\WineVendingMachine\\WineVendingMachine.Core\\WineVendingMachine.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gayan\\.nuget\\packages\\commonservicelocator\\2.0.4\\commonservicelocator.2.0.4.nupkg.sha512",
+    "C:\\Users\\Gayan\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\Gayan\\.nuget\\packages\\prism.wpf\\7.2.0.1422\\prism.wpf.7.2.0.1422.nupkg.sha512"
+  ],
+  "logs": []
+}

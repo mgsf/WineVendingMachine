@@ -1,0 +1,24 @@
+﻿<Window x:Class="WineVendingMachine.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:core="clr-namespace:WineVendingMachine.Core;assembly=WineVendingMachine.Core"
+        Title="{Binding Title}" Height="424" Width="593" >
+
+    <StackPanel Orientation="Vertical">
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Name="btnBuyWine" FontSize="15" Content="Buy Wine" Background="DeepPink" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="0"/>
+            <Button Name="btnMachineMgt" FontSize="15" Content="Machine Mgt" Background="DarkViolet" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
+        <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" />
+    </StackPanel>
+</Window>

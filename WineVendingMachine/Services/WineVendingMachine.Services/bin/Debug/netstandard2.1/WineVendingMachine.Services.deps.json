@@ -1,0 +1,37 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "WineVendingMachine.Services/1.0.0": {
+        "dependencies": {
+          "WineVendingMachine.Services.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "WineVendingMachine.Services.dll": {}
+        }
+      },
+      "WineVendingMachine.Services.Interfaces/1.0.0": {
+        "runtime": {
+          "WineVendingMachine.Services.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WineVendingMachine.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WineVendingMachine.Services.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
