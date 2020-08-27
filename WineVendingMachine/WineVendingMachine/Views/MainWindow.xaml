@@ -4,9 +4,9 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:core="clr-namespace:WineVendingMachine.Core;assembly=WineVendingMachine.Core"
-        Title="{Binding Title}" Height="424" Width="593" >
+        Title="{Binding Title}" Height="552" Width="987" >
 
-    <StackPanel Orientation="Vertical">
+    <StackPanel Orientation="Vertical" Background="#FFD7CD86">
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>

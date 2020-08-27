@@ -7,9 +7,11 @@ C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVe
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\bin\Debug\netcoreapp3.1\WineVendingMachine.Services.Interfaces.pdb
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.csprojAssemblyReference.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\Views\ViewA.g.cs
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\Views\ViewSell.g.cs
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine_MarkupCompile.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine_MarkupCompile.lref
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\Views\ViewA.baml
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\Views\ViewSell.baml
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.g.resources
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.AssemblyInfoInputs.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.ModuleName\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.AssemblyInfo.cs

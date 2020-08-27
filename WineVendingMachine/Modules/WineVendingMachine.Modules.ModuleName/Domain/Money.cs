@@ -1,11 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
     public sealed class Money : ValueObject<Money>
     {
+        //
+        public static readonly Money None = new Money(0, 0, 0, 0, 0, 0);
+        public static readonly Money TenRupee = new Money(1, 0, 0, 0, 0, 0);
+        public static readonly Money TwentyRupee = new Money(0, 1, 0, 0, 0, 0);
+        public static readonly Money FiftyRupee = new Money(0, 0, 1, 0, 0, 0);
+        public static readonly Money HundredRupee = new Money(0, 0, 0, 1, 0, 0);
+        public static readonly Money FiveHundredRupee = new Money(0, 0, 0, 0, 1, 0);
+        public static readonly Money ThousandRupee = new Money(0, 0, 0, 0, 0, 1);
+
         //Assumption - Wine prices are rounded to nearest 10 Rupee
         public int TenRupeeCount { get; set; }
         public int TwentyRupeeCount { get; set; }

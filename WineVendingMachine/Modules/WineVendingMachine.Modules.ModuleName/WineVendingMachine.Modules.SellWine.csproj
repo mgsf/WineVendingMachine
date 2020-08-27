@@ -5,6 +5,22 @@
     <AssemblyName>WineVendingMachine.Modules.SellWine</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="images\banrock.jpg" />
+    <None Remove="images\ice_rose.jpg" />
+    <None Remove="images\Th_cs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\banrock.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\ice_rose.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Th_cs.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
   </ItemGroup>
   <ItemGroup>

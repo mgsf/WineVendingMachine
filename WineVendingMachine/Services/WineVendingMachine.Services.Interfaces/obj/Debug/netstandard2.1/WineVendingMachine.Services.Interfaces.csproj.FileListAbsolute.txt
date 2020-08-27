@@ -6,4 +6,3 @@ C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Services\WineV
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Services\WineVendingMachine.Services.Interfaces\obj\Debug\netstandard2.1\WineVendingMachine.Services.Interfaces.csproj.CoreCompileInputs.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Services\WineVendingMachine.Services.Interfaces\obj\Debug\netstandard2.1\WineVendingMachine.Services.Interfaces.dll
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Services\WineVendingMachine.Services.Interfaces\obj\Debug\netstandard2.1\WineVendingMachine.Services.Interfaces.pdb
-C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Services\WineVendingMachine.Services.Interfaces\obj\Debug\netstandard2.1\WineVendingMachine.Services.Interfaces.csprojAssemblyReference.cache
