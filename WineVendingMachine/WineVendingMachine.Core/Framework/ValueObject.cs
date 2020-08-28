@@ -1,4 +1,4 @@
-﻿namespace WineVendingMachine.Modules.SellWine.Domain
+﻿namespace WineVendingMachine.Core.Framework
 {
     public abstract class ValueObject<T>
       where T : ValueObject<T>

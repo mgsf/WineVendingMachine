@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using WineVendingMachine.Core.Framework;
 using static WineVendingMachine.Modules.SellWine.Domain.Money;
 
 namespace WineVendingMachine.Modules.SellWine.Domain

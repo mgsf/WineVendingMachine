@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WineVendingMachine.Modules.SellWine.Domain
+namespace WineVendingMachine.Core.Framework
 {
     public abstract class Entity
     {

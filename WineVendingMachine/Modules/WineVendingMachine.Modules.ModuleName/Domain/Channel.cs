@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using WineVendingMachine.Core.Framework;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
