@@ -13,38 +13,42 @@ namespace WineVendingMachine.Modules.SellWine.Domain
 
         public VendingMachine()
         {
-
+            MoneyInMachine = None;
+            MoneyInTransaction = 0;
         }
 
         public virtual void InsertMoney(Money money) 
         {
             Money[] Notes = {TenRupee, TwentyRupee, FiftyRupee, HundredRupee, FiveHundredRupee, ThousandRupee };
-            if(!Notes.Contains(money))
+            if (!Notes.Contains(money))
                 throw new InvalidOperationException();
 
             MoneyInTransaction += money.Amount;
             MoneyInMachine += money;
         }
 
-        /*
-        public void SellWine() 
+
+        public virtual void ReturnMoney()
         {
-            
+            Money moneyReturn = MoneyInMachine.AllocateMoney(MoneyInTransaction);
+            MoneyInMachine -= moneyReturn;
+            MoneyInTransaction = 0.00m;
+        }
+        
+        public virtual void BuyWine() 
+        {
             
         } 
 
-        public virtual void  ReturnMoney() 
-        {
-            
-        }
 
-        
+
+        /*
         public void LoadMoney() { }
 
         public void UnLoadMoney() { }
 
         public void LoadWine() { } */
- 
+
 
     }
 }

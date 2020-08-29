@@ -13,12 +13,10 @@ namespace WineVendingMachine.Modules.SellWine.Tests.Domain
         {
             var vendingMachine = new VendingMachine();
 
-            vendingMachine.InsertMoney(ThousandRupee);
-            vendingMachine.InsertMoney(ThousandRupee);
-            vendingMachine.InsertMoney(FiveHundredRupee);
-            vendingMachine.InsertMoney(TwentyRupee);
+            vendingMachine.InsertMoney(TenRupee);
+            vendingMachine.InsertMoney(FiftyRupee);
 
-            vendingMachine.MoneyInTransaction.Amount.Should().Be(2520);
+            vendingMachine.MoneyInTransaction.Should().Be(60.00m);
         }
 
         [Fact]
@@ -30,6 +28,18 @@ namespace WineVendingMachine.Modules.SellWine.Tests.Domain
             Action action = () => vendingMachine.InsertMoney(FortyRupees);
 
             action.Should().Throw<InvalidOperationException>();
+        }
+
+        [Fact]
+        public void Return_money_empties_moneyintransaction()
+        {
+            var vendingMachine = new VendingMachine();
+            vendingMachine.InsertMoney(TenRupee);
+            vendingMachine.InsertMoney(FiftyRupee);
+
+            vendingMachine.ReturnMoney();
+
+            vendingMachine.MoneyInTransaction.Should().Be(0.00m);
         }
     }
 }

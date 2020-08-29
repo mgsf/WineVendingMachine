@@ -27,6 +27,7 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
             InsertHundredCommand = new DelegateCommand(() => InsertMoney(Money.HundredRupee));
             InsertFiveHundredCommand = new DelegateCommand(() => InsertMoney(Money.FiveHundredRupee));
             InsertThousandCommand = new DelegateCommand(() => InsertMoney(Money.ThousandRupee));
+            ReturnMoneyCommand = new DelegateCommand(() => ReturnMoney());
 
             _repository = new VendingMachineRepository();
             _vendingMachine = _repository.GetById(1);
@@ -66,6 +67,7 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
         public ICommand InsertHundredCommand { get; private set; }
         public ICommand InsertFiveHundredCommand { get; private set; }
         public ICommand InsertThousandCommand { get; private set; }
+        public ICommand ReturnMoneyCommand { get; private set; }
         public ICommand BuyWineCommand { get; set; }
 
         private void InsertMoney(Money money)
@@ -76,7 +78,12 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
             MoneyInTransaction = "Total Inserted: " + _vendingMachine.MoneyInTransaction.ToString();
         }
 
-
+        private void ReturnMoney()
+        {
+            _vendingMachine.ReturnMoney();
+            MoneyInMachine = _vendingMachine.MoneyInMachine;
+            MoneyInTransaction = "Money Returned";
+        }
 
     }
 }

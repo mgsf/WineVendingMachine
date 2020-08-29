@@ -108,3 +108,15 @@ C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVend
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.Tests.pdb
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.Tests.genruntimeconfig.cache
 C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.SellWine.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\Antlr3.Runtime.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\FluentNHibernate.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\Iesi.Collections.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\NHibernate.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Tests\WineVendingMachine.Modules.ModuleName.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

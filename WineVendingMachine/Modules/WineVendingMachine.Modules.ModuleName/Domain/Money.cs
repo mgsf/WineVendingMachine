@@ -101,28 +101,28 @@ namespace WineVendingMachine.Modules.SellWine.Domain
 
         public override string ToString()
         {
-            if (Amount < 1)
-                return "¢" + (Amount * 100).ToString("0");
+            //if (Amount < 1)
+            //    return "¢" + (Amount * 100).ToString("0");
 
             return "Rs " + Amount.ToString("0.00");
         }
 
-        private Money AllocateMoney(decimal amount)
+        public Money AllocateMoney(decimal amount)
         {
             int thousandRupeeCount = Math.Min((int)(amount / 1000), ThousandRupeeCount);
-            _ = amount - thousandRupeeCount * 1000;
+            amount = amount - thousandRupeeCount * 1000;
 
             int fiveHundredRupeeCount = Math.Min((int)(amount / 500), FiveHundredRupeeCount);
-            _ = amount - fiveHundredRupeeCount * 500;
+            amount = amount - fiveHundredRupeeCount * 500;
 
             int hundredRupeeCount = Math.Min((int)(amount / 100), HundredRupeeCount);
-            _ = amount - hundredRupeeCount * 100;
+            amount = amount - hundredRupeeCount * 100;
 
             int fiftyRupeeCount = Math.Min((int)(amount / 50), FiftyRupeeCount);
-            _ = amount - fiftyRupeeCount * 50;
+            amount = amount - fiftyRupeeCount * 50;
 
             int twentyRupeeCount = Math.Min((int)(amount / 20), TwentyRupeeCount);
-            _ = amount - twentyRupeeCount * 20;
+            amount = amount - twentyRupeeCount * 20;
 
             int tenRupeeCount = Math.Min((int)(amount / 10), TenRupeeCount);
 
