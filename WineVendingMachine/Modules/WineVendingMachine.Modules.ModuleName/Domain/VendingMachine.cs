@@ -6,36 +6,44 @@ using static WineVendingMachine.Modules.SellWine.Domain.Money;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
-    public sealed class VendingMachine : Entity
+    public class VendingMachine : AggregateRoot
     {
-        public Money MoneyInMachine { get; private set; } = None;
-        public Money MoneyInTransaction { get; private set; } = None;
+        public virtual Money MoneyInMachine { get; protected set; } 
+        public virtual decimal MoneyInTransaction { get; protected set; } 
 
-        public void InsertMoney(Money money) 
+        public VendingMachine()
+        {
+
+        }
+
+        public virtual void InsertMoney(Money money) 
         {
             Money[] Notes = {TenRupee, TwentyRupee, FiftyRupee, HundredRupee, FiveHundredRupee, ThousandRupee };
             if(!Notes.Contains(money))
                 throw new InvalidOperationException();
 
-            MoneyInTransaction += money;
+            MoneyInTransaction += money.Amount;
+            MoneyInMachine += money;
         }
 
+        /*
         public void SellWine() 
         {
-            MoneyInMachine += MoneyInTransaction;
-            MoneyInTransaction = None;
-        }
+            
+            
+        } 
 
-        public void ReturnMoney() 
+        public virtual void  ReturnMoney() 
         {
-            MoneyInTransaction = None;
+            
         }
 
+        
         public void LoadMoney() { }
 
         public void UnLoadMoney() { }
 
-        public void LoadWine() { }
+        public void LoadWine() { } */
  
 
     }

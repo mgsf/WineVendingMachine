@@ -4,28 +4,30 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WineVendingMachine.Modules.SellWine.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FFD7CD86" Margin="0,0,-135,-71">
-        <Button Content="Rs  10/=" HorizontalAlignment="Left" Margin="31,62,0,0" VerticalAlignment="Top" Background="#FF95D64B"/>
-        <Button Content="Rs  20/=" HorizontalAlignment="Left" Margin="31,110,0,0" VerticalAlignment="Top" Background="#FF95D64B"/>
-        <Button Content="Rs  50/=" HorizontalAlignment="Left" Margin="31,157,0,0" VerticalAlignment="Top" Background="#FF95D64B"/>
-        <Button Content="Rs  100/=" HorizontalAlignment="Left" Margin="129,62,0,0" VerticalAlignment="Top" Background="#FF95D64B"/>
-        <Button Content="Rs  500/=" HorizontalAlignment="Left" Margin="129,110,0,0" VerticalAlignment="Top" Background="#FF95D64B"/>
-        <Button Content="Rs 1000/=" HorizontalAlignment="Left" Margin="129,157,0,0" VerticalAlignment="Top" Background="#FF95D64B"/>
-        <Label Content="Press to Insert Money" HorizontalAlignment="Left" Margin="38,22,0,0" VerticalAlignment="Top" Width="155"/>
-        <Button Content="Return Money" HorizontalAlignment="Left" Margin="31,202,0,0" VerticalAlignment="Top" Width="162"/>
-        <Button  HorizontalAlignment="Left" Margin="339,64,0,0" VerticalAlignment="Top" Height="249" Width="151">
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" Height="484" Width="916">
+
+    <Grid Background="#FFD7CD86" Margin="0,0,-10,-29">
+        <Button Content="Rs  10/=" HorizontalAlignment="Left" Margin="31,62,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertTenCommand}"/>
+        <Button Content="Rs  20/=" HorizontalAlignment="Left" Margin="31,110,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertTwentyCommand}"/>
+        <Button Content="Rs  50/=" HorizontalAlignment="Left" Margin="31,157,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertFiftyCommand}"/>
+        <Button Content="Rs  100/=" HorizontalAlignment="Left" Margin="129,62,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertHundredCommand}"/>
+        <Button Content="Rs  500/=" HorizontalAlignment="Left" Margin="129,110,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertFiveHundredCommand}"/>
+        <Button Content="Rs 1000/=" HorizontalAlignment="Left" Margin="129,157,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertThousandCommand}"/>
+        <Label Content="{Binding Message}" HorizontalAlignment="Left" Margin="38,22,0,0" VerticalAlignment="Top" Width="155"/>
+        <Button Content="Return Money" HorizontalAlignment="Left" Margin="31,236,0,0" VerticalAlignment="Top" Width="162"/>
+        <Button  Content="Press" HorizontalAlignment="Left" Margin="339,64,0,0" VerticalAlignment="Top" Height="249" Width="151" Command="{Binding BuyWineCommand}" CommandParameter="1">
             <Button.Background>
                 <ImageBrush ImageSource="..\images\Th_cs.jpg" Stretch="Fill"></ImageBrush>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="527,64,0,0" VerticalAlignment="Top" Height="249" Width="143">
+        <Button Content="Press" HorizontalAlignment="Left" Margin="527,64,0,0" VerticalAlignment="Top" Height="249" Width="143" Command="{Binding BuyWineCommand}" CommandParameter="2">
             <Button.Background>
                 <ImageBrush ImageSource="..\images\ice_rose.jpg" Stretch="Fill"></ImageBrush>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="703,64,0,0" VerticalAlignment="Top" Height="249" Width="143">
+        <Button Content="Press" HorizontalAlignment="Left" Margin="703,64,0,0" VerticalAlignment="Top" Height="249" Width="143" Command="{Binding BuyWineCommand}" CommandParameter="">
             <Button.Background>
                 <ImageBrush ImageSource="..\images\banrock.jpg" Stretch="Fill"></ImageBrush>
             </Button.Background>
@@ -33,6 +35,21 @@
         <Label Content="Rs 2710" HorizontalAlignment="Left" Margin="372,318,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="Rs 5140" HorizontalAlignment="Left" Margin="553,318,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="Rs 2530" HorizontalAlignment="Left" Margin="729,318,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="{Binding MoneyInTransaction}" HorizontalAlignment="Left" Margin="38,194,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Rs 10/=" HorizontalAlignment="Left" Margin="142,407,0,0" VerticalAlignment="Top" Background="#FFD88914" Width="58" Height="29"/>
+        <Label Content="Rs 20/=" HorizontalAlignment="Left" Margin="242,407,0,0" VerticalAlignment="Top" Background="#FFD88914" Width="58" Height="29"/>
+        <Label Content="Rs 50/=" HorizontalAlignment="Left" Margin="343,407,0,0" VerticalAlignment="Top" Background="#FFD88914" Width="58" Height="29"/>
+        <Label Content="Rs 100/=" HorizontalAlignment="Center" Margin="0,407,0,0" VerticalAlignment="Top" Background="#FFD88914" Width="58" Height="29"/>
+        <Label Content="Rs 500/=" HorizontalAlignment="Left" Margin="545,407,0,0" VerticalAlignment="Top" Background="#FFD88914" Width="58" Height="29"/>
+        <Label Content="Rs 1000/=" HorizontalAlignment="Left" Margin="646,407,0,0" VerticalAlignment="Top" Background="#FFD88914" Height="29" Width="58"/>
+        <Label Content="{Binding MoneyInMachine.TenRupeeCount}" HorizontalAlignment="Left" Margin="142,442,0,0" VerticalAlignment="Top" Background="#FFD8C814" Width="58" Height="29"/>
+        <Label Content="{Binding MoneyInMachine.TwentyRupeeCount}" HorizontalAlignment="Left" Margin="242,442,0,0" VerticalAlignment="Top" Background="#FFD8C814" Width="58" Height="29"/>
+        <Label Content="{Binding MoneyInMachine.FiftyRupeeCount}" HorizontalAlignment="Left" Margin="343,442,0,0" VerticalAlignment="Top" Background="#FFD8C814" Width="58" Height="29"/>
+        <Label Content="{Binding MoneyInMachine.HundredRupeeCount}" HorizontalAlignment="Center" Margin="0,442,0,0" VerticalAlignment="Top" Background="#FFD8C814" Width="58" Height="29"/>
+        <Label Content="{Binding MoneyInMachine.FiveHundredRupeeCount}" HorizontalAlignment="Left" Margin="545,442,0,0" VerticalAlignment="Top" Background="#FFD8C814" Width="58" Height="29"/>
+        <Label Content="{Binding MoneyInMachine.ThousandRupeeCount}" HorizontalAlignment="Left" Margin="646,442,0,0" VerticalAlignment="Top" Background="#FFD8C814" Height="29" Width="58"/>
+        <Label Content="Money In Machine" HorizontalAlignment="Left" Height="32" Margin="33,364,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label Content="{Binding MoneyInMachine}" HorizontalAlignment="Left" Height="32" Margin="170,365,0,0" VerticalAlignment="Top" Width="101"/>
 
     </Grid>
 </UserControl>

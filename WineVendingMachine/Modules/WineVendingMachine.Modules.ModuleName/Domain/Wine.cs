@@ -5,7 +5,7 @@ using WineVendingMachine.Core.Framework;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
-    public class Wine : Entity
+    public class Wine : AggregateRoot
     {
         public virtual string Name { get; }
 

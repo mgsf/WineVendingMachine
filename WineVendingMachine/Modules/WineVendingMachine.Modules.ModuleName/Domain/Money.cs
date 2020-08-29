@@ -1,4 +1,5 @@
-﻿using WineVendingMachine.Core.Framework;
+﻿using System;
+using WineVendingMachine.Core.Framework;
 
 namespace WineVendingMachine.Modules.SellWine.Domain
 {
@@ -20,6 +21,11 @@ namespace WineVendingMachine.Modules.SellWine.Domain
         public int HundredRupeeCount { get; set; }
         public int FiveHundredRupeeCount { get; set; }
         public int ThousandRupeeCount { get; set; }
+
+        public Money()
+        {
+
+        }
 
         public Money(
             int tenRupeeCount,
@@ -91,6 +97,43 @@ namespace WineVendingMachine.Modules.SellWine.Domain
                 hashCode = (hashCode * 397) ^ ThousandRupeeCount;
                 return hashCode;
             }
+        }
+
+        public override string ToString()
+        {
+            if (Amount < 1)
+                return "¢" + (Amount * 100).ToString("0");
+
+            return "Rs " + Amount.ToString("0.00");
+        }
+
+        private Money AllocateMoney(decimal amount)
+        {
+            int thousandRupeeCount = Math.Min((int)(amount / 1000), ThousandRupeeCount);
+            _ = amount - thousandRupeeCount * 1000;
+
+            int fiveHundredRupeeCount = Math.Min((int)(amount / 500), FiveHundredRupeeCount);
+            _ = amount - fiveHundredRupeeCount * 500;
+
+            int hundredRupeeCount = Math.Min((int)(amount / 100), HundredRupeeCount);
+            _ = amount - hundredRupeeCount * 100;
+
+            int fiftyRupeeCount = Math.Min((int)(amount / 50), FiftyRupeeCount);
+            _ = amount - fiftyRupeeCount * 50;
+
+            int twentyRupeeCount = Math.Min((int)(amount / 20), TwentyRupeeCount);
+            _ = amount - twentyRupeeCount * 20;
+
+            int tenRupeeCount = Math.Min((int)(amount / 10), TenRupeeCount);
+
+            return new Money(
+                tenRupeeCount,
+                twentyRupeeCount,
+                fiftyRupeeCount,
+                hundredRupeeCount,
+                fiveHundredRupeeCount,
+                thousandRupeeCount
+                );
         }
     }
 }

@@ -5,6 +5,8 @@ using Prism.Modularity;
 using WineVendingMachine.Modules.SellWine;
 using WineVendingMachine.Services.Interfaces;
 using WineVendingMachine.Services;
+using WineVendingMachine.Modules.SellWine.Views;
+using WineVendingMachine.Modules.SellWine.ViewModels;
 
 namespace WineVendingMachine
 {
@@ -21,6 +23,7 @@ namespace WineVendingMachine
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IMessageService, MessageService>();
+            
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

@@ -5,6 +5,9 @@
     <AssemblyName>WineVendingMachine.Core</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="NHibernate" Version="5.3.2" />
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 </Project>

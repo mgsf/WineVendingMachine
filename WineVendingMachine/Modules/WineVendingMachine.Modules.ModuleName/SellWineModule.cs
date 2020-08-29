@@ -3,6 +3,9 @@ using WineVendingMachine.Modules.SellWine.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
+using WineVendingMachine.Core.Framework;
+using WineVendingMachine.Modules.SellWine.ViewModels;
+using WineVendingMachine.Modules.SellWine.Domain;
 
 namespace WineVendingMachine.Modules.SellWine
 {
@@ -17,12 +20,14 @@ namespace WineVendingMachine.Modules.SellWine
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            _regionManager.RequestNavigate(RegionNames.ContentRegion, "ViewSell");
+            SessionFactory.Init(@"Server=.;Database=VendingMachine;Trusted_Connection=true");
+           _regionManager.RequestNavigate(RegionNames.ContentRegion, "ViewSell");
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<ViewSell>();
+           
         }
     }
 }

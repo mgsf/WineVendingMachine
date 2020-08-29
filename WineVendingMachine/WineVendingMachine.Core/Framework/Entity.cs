@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using NHibernate.Proxy;
 
 namespace WineVendingMachine.Core.Framework
 {
     public abstract class Entity
     {
-        public long Id { get; protected set; }
+        public virtual long Id { get; protected set; }
 
         public override bool Equals(object obj)
         {
@@ -18,7 +17,7 @@ namespace WineVendingMachine.Core.Framework
             if (ReferenceEquals(this, other))
                 return true;
 
-            if (GetType() != other.GetType())
+            if (GetRealType() != other.GetRealType())
                 return false;
 
             if (Id == 0 || other.Id == 0)
@@ -46,6 +45,11 @@ namespace WineVendingMachine.Core.Framework
         public override int GetHashCode()
         {
             return (GetType().ToString() + Id).GetHashCode();
+        }
+
+        private Type GetRealType()
+        {
+            return NHibernateProxyHelper.GetClassWithoutInitializingProxy(this);
         }
     }
 }
