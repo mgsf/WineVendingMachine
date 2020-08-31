@@ -28,11 +28,14 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
             InsertFiveHundredCommand = new DelegateCommand(() => InsertMoney(Money.FiveHundredRupee));
             InsertThousandCommand = new DelegateCommand(() => InsertMoney(Money.ThousandRupee));
             ReturnMoneyCommand = new DelegateCommand(() => ReturnMoney());
+            BuyWineCommand = new DelegateCommand<string>(BuyWine, WineAvailable);
 
             _repository = new VendingMachineRepository();
             _vendingMachine = _repository.GetById(1);
             MoneyInMachine = _vendingMachine.MoneyInMachine;
         }
+
+
 
         public override void OnNavigatedTo(NavigationContext navigationContext)
         {
@@ -68,7 +71,7 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
         public ICommand InsertFiveHundredCommand { get; private set; }
         public ICommand InsertThousandCommand { get; private set; }
         public ICommand ReturnMoneyCommand { get; private set; }
-        public ICommand BuyWineCommand { get; set; }
+        public DelegateCommand<string> BuyWineCommand { get; set; }
 
         private void InsertMoney(Money money)
         {
@@ -85,5 +88,18 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
             MoneyInTransaction = "Money Returned";
         }
 
+        private void BuyWine(string channelID)
+        {
+            _vendingMachine.BuyWine(int.Parse(channelID));
+            Message = "";
+            MoneyInTransaction = "";
+            MoneyInMachine = _vendingMachine.MoneyInMachine;
+            _repository.Save(_vendingMachine);
+        }
+
+        private bool WineAvailable(string channelID)
+        {
+            return _vendingMachine.WineAvailable(int.Parse(channelID));
+        }
     }
 }

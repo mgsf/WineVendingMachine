@@ -17,17 +17,17 @@
         <Button Content="Rs 1000/=" HorizontalAlignment="Left" Margin="129,157,0,0" VerticalAlignment="Top" Background="#FF95D64B" Command="{Binding InsertThousandCommand}"/>
         <Label Content="{Binding Message}" HorizontalAlignment="Left" Margin="38,22,0,0" VerticalAlignment="Top" Width="155"/>
         <Button Content="Return Money" HorizontalAlignment="Left" Margin="31,236,0,0" VerticalAlignment="Top" Width="162" Command="{Binding ReturnMoneyCommand}"/>
-        <Button  Content="Press" HorizontalAlignment="Left" Margin="339,64,0,0" VerticalAlignment="Top" Height="249" Width="151" Command="{Binding BuyWineCommand}" CommandParameter="1">
+        <Button  Content="Button" HorizontalAlignment="Left" Margin="339,64,0,0" VerticalAlignment="Top" Height="249" Width="151" Command="{Binding BuyWineCommand}" CommandParameter="1">
             <Button.Background>
                 <ImageBrush ImageSource="..\images\Th_cs.jpg" Stretch="Fill"></ImageBrush>
             </Button.Background>
         </Button>
-        <Button Content="Press" HorizontalAlignment="Left" Margin="527,64,0,0" VerticalAlignment="Top" Height="249" Width="143" Command="{Binding BuyWineCommand}" CommandParameter="2">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="527,64,0,0" VerticalAlignment="Top" Height="249" Width="143" Command="{Binding BuyWineCommand}" CommandParameter="2">
             <Button.Background>
                 <ImageBrush ImageSource="..\images\ice_rose.jpg" Stretch="Fill"></ImageBrush>
             </Button.Background>
         </Button>
-        <Button Content="Press" HorizontalAlignment="Left" Margin="703,64,0,0" VerticalAlignment="Top" Height="249" Width="143" Command="{Binding BuyWineCommand}" CommandParameter="3">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="703,64,0,0" VerticalAlignment="Top" Height="249" Width="143" Command="{Binding BuyWineCommand}" CommandParameter="3">
             <Button.Background>
                 <ImageBrush ImageSource="..\images\banrock.jpg" Stretch="Fill"></ImageBrush>
             </Button.Background>

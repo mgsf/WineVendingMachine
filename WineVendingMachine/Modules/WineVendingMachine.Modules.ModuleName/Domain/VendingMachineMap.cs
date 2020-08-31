@@ -18,6 +18,11 @@ namespace WineVendingMachine.Modules.SellWine.Domain
                 y.Map(x => x.FiveHundredRupeeCount);
                 y.Map(x => x.ThousandRupeeCount);
             });
+
+            HasMany<Channel>(Reveal.Member<VendingMachine>("Channels"))
+                .Cascade.SaveUpdate()
+                .Not.LazyLoad()
+                .Inverse();
         }
     }
 }
