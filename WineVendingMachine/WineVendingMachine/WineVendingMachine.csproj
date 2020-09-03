@@ -9,6 +9,7 @@
     <PackageReference Include="Prism.DryIoc" Version="7.2.0.1422" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Modules\WineVendingMachine.Modules.MachineMgt\WineVendingMachine.Modules.MachineMgt.csproj" />
     <ProjectReference Include="..\WineVendingMachine.Core\WineVendingMachine.Core.csproj" />
     <ProjectReference Include="..\Modules\WineVendingMachine.Modules.ModuleName\WineVendingMachine.Modules.SellWine.csproj" />
     <ProjectReference Include="..\Services\WineVendingMachine.Services.Interfaces\WineVendingMachine.Services.Interfaces.csproj" />

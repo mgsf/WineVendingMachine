@@ -3,6 +3,7 @@ using WineVendingMachine.Views;
 using System.Windows;
 using Prism.Modularity;
 using WineVendingMachine.Modules.SellWine;
+using WineVendingMachine.Modules.MachineMgt;
 using WineVendingMachine.Services.Interfaces;
 using WineVendingMachine.Services;
 using WineVendingMachine.Modules.SellWine.Views;
@@ -29,6 +30,8 @@ namespace WineVendingMachine
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<SellWineModule>();
+            moduleCatalog.AddModule<MachineMgtModule>();
+            
         }
     }
 }

@@ -1561,6 +1561,23 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "WineVendingMachine.Modules.MachineMgt/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1422",
+          "WineVendingMachine.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WineVendingMachine.Modules.MachineMgt.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WineVendingMachine.Modules.MachineMgt.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "WineVendingMachine.Modules.SellWine/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5637,6 +5654,11 @@
       "path": "../WineVendingMachine.Core/WineVendingMachine.Core.csproj",
       "msbuildProject": "../WineVendingMachine.Core/WineVendingMachine.Core.csproj"
     },
+    "WineVendingMachine.Modules.MachineMgt/1.0.0": {
+      "type": "project",
+      "path": "../Modules/WineVendingMachine.Modules.MachineMgt/WineVendingMachine.Modules.MachineMgt.csproj",
+      "msbuildProject": "../Modules/WineVendingMachine.Modules.MachineMgt/WineVendingMachine.Modules.MachineMgt.csproj"
+    },
     "WineVendingMachine.Modules.SellWine/1.0.0": {
       "type": "project",
       "path": "../Modules/WineVendingMachine.Modules.ModuleName/WineVendingMachine.Modules.SellWine.csproj",
@@ -5657,6 +5679,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Prism.DryIoc >= 7.2.0.1422",
       "WineVendingMachine.Core >= 1.0.0",
+      "WineVendingMachine.Modules.MachineMgt >= 1.0.0",
       "WineVendingMachine.Modules.SellWine >= 1.0.0",
       "WineVendingMachine.Services >= 1.0.0",
       "WineVendingMachine.Services.Interfaces >= 1.0.0"
@@ -5693,6 +5716,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\Gayan\\source\\repos\\WineVendingMachine\\WineVendingMachine\\Modules\\WineVendingMachine.Modules.MachineMgt\\WineVendingMachine.Modules.MachineMgt.csproj": {
+              "projectPath": "C:\\Users\\Gayan\\source\\repos\\WineVendingMachine\\WineVendingMachine\\Modules\\WineVendingMachine.Modules.MachineMgt\\WineVendingMachine.Modules.MachineMgt.csproj"
+            },
             "C:\\Users\\Gayan\\source\\repos\\WineVendingMachine\\WineVendingMachine\\Modules\\WineVendingMachine.Modules.ModuleName\\WineVendingMachine.Modules.SellWine.csproj": {
               "projectPath": "C:\\Users\\Gayan\\source\\repos\\WineVendingMachine\\WineVendingMachine\\Modules\\WineVendingMachine.Modules.ModuleName\\WineVendingMachine.Modules.SellWine.csproj"
             },

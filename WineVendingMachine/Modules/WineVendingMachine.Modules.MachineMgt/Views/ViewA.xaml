@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="WineVendingMachine.Modules.MachineMgt.Views.ViewA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WineVendingMachine.Modules.MachineMgt.Views"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True" Background="Maroon" Height="315" Width="452" >
+    <Grid Background="#FF159AD2" Margin="0,0,-211,-61">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="149*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="{Binding Message}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+        <Button Content="Load Money" HorizontalAlignment="Left" Margin="87,177,0,0" VerticalAlignment="Top" Height="29" Width="124" Command="{Binding LoadMoneyCommand}"/>
+        <Label Content="Rs 10" HorizontalAlignment="Left" Height="26" Margin="158,47,0,0" VerticalAlignment="Top" Width="62" Background="#FFD88914"/>
+        <Label Content="Rs 20" HorizontalAlignment="Left" Height="26" Margin="234,47,0,0" VerticalAlignment="Top" Width="62" Background="#FFD88914"/>
+        <Label Content="Rs 50" HorizontalAlignment="Left" Height="26" Margin="307,47,0,0" VerticalAlignment="Top" Width="62" Background="#FFD88914"/>
+        <Label Content="Rs 100" HorizontalAlignment="Left" Height="26" Margin="389,47,0,0" VerticalAlignment="Top" Width="62" Background="#FFD88914"/>
+        <Label Content="Rs 500" HorizontalAlignment="Left" Height="26" Margin="459,47,0,0" VerticalAlignment="Top" Width="62" Background="#FFD88914"/>
+        <Label Content="Rs 1000" HorizontalAlignment="Left" Height="26" Margin="530,47,0,0" VerticalAlignment="Top" Width="62" Background="#FFD88914"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="158,116,0,0" Text="{Binding TenRupeeNotes}" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="234,116,0,0" Text="{Binding TwentyRupeeNotes}" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="308,116,0,0" Text="{Binding FiftyRupeeNotes}" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="389,116,0,0" Text="{Binding HundredRupeeNotes}" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="458,116,0,0" Text="{Binding FiveHundredRupeeNotes}" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="532,116,0,0" Text="{Binding ThousandRupeeNotes}" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <Label Content="{Binding MoneyInMachine.TenRupeeCount}" HorizontalAlignment="Left" Height="26" Margin="158,81,0,0" VerticalAlignment="Top" Width="62" Background="#FFD8D114"/>
+        <Label Content="{Binding MoneyInMachine.TwentyRupeeCount}" HorizontalAlignment="Left" Height="26" Margin="234,81,0,0" VerticalAlignment="Top" Width="62" Background="#FFD8D114"/>
+        <Label Content="{Binding MoneyInMachine.FiftyRupeeCount}" HorizontalAlignment="Left" Height="26" Margin="307,81,0,0" VerticalAlignment="Top" Width="62" Background="#FFD8D114"/>
+        <Label Content="{Binding MoneyInMachine.HundredRupeeCount}" HorizontalAlignment="Left" Height="26" Margin="389,81,0,0" VerticalAlignment="Top" Width="62" Background="#FFD8D114"/>
+        <Label Content="{Binding MoneyInMachine.FiveHundredRupeeCount}" HorizontalAlignment="Left" Height="26" Margin="459,81,0,0" VerticalAlignment="Top" Width="62" Background="#FFD8D114"/>
+        <Label Content="{Binding MoneyInMachine.ThousandRupeeCount}" HorizontalAlignment="Left" Height="26" Margin="530,81,0,0" VerticalAlignment="Top" Width="62" Background="#FFD8D114"/>
+        <Label Content="Notes" HorizontalAlignment="Left" Margin="97,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Money In Machine" HorizontalAlignment="Left" Height="37" Margin="21,80,0,0" VerticalAlignment="Top" Width="132"/>
+    </Grid>
+</UserControl>

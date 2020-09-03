@@ -11,17 +11,17 @@ namespace WineVendingMachine.Modules.SellWine
 {
     public class SellWineModule : IModule
     {
-        private readonly IRegionManager _regionManager;
+        //private readonly IRegionManager _regionManager;
 
-        public SellWineModule(IRegionManager regionManager)
+        public SellWineModule()
         {
-            _regionManager = regionManager;
+            //_regionManager = regionManager;
         }
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
             SessionFactory.Init(@"Server=.;Database=VendingMachine;Trusted_Connection=true");
-           _regionManager.RequestNavigate(RegionNames.ContentRegion, "ViewSell");
+           //_regionManager.RequestNavigate(RegionNames.SellWine, "ViewSell");
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

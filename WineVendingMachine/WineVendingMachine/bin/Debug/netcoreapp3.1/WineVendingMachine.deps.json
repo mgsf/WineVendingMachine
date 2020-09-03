@@ -10,6 +10,7 @@
         "dependencies": {
           "Prism.DryIoc": "7.2.0.1422",
           "WineVendingMachine.Core": "1.0.0",
+          "WineVendingMachine.Modules.MachineMgt": "1.0.0",
           "WineVendingMachine.Modules.SellWine": "1.0.0",
           "WineVendingMachine.Services": "1.0.0",
           "WineVendingMachine.Services.Interfaces": "1.0.0"
@@ -944,6 +945,15 @@
           "WineVendingMachine.Core.dll": {}
         }
       },
+      "WineVendingMachine.Modules.MachineMgt/1.0.0": {
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1422",
+          "WineVendingMachine.Core": "1.0.0"
+        },
+        "runtime": {
+          "WineVendingMachine.Modules.MachineMgt.dll": {}
+        }
+      },
       "WineVendingMachine.Modules.SellWine/1.0.0": {
         "dependencies": {
           "Prism.Wpf": "7.2.0.1422",
@@ -1656,6 +1666,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "WineVendingMachine.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WineVendingMachine.Modules.MachineMgt/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,17 @@
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\bin\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.deps.json
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\bin\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\bin\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.pdb
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\bin\Debug\netcoreapp3.1\WineVendingMachine.Core.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\bin\Debug\netcoreapp3.1\WineVendingMachine.Core.pdb
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.csprojAssemblyReference.cache
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\Views\ViewA.g.cs
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt_MarkupCompile.cache
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt_MarkupCompile.lref
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\Views\ViewA.baml
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.g.resources
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.AssemblyInfoInputs.cache
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.AssemblyInfo.cs
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.csproj.CoreCompileInputs.cache
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.csproj.CopyComplete
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.dll
+C:\Users\Gayan\source\repos\WineVendingMachine\WineVendingMachine\Modules\WineVendingMachine.Modules.MachineMgt\obj\Debug\netcoreapp3.1\WineVendingMachine.Modules.MachineMgt.pdb

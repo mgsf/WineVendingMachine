@@ -7,6 +7,9 @@ using WineVendingMachine.Modules.SellWine.Domain;
 using System;
 using WineVendingMachine.Services.Interfaces;
 using WineVendingMachine.Core.Framework;
+using Prism.Events;
+using WineVendingMachine.Core.Events;
+using EventMoney = WineVendingMachine.Core.Events.Models;
 
 namespace WineVendingMachine.Modules.SellWine.ViewModels
 {
@@ -17,7 +20,7 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
         private readonly VendingMachineRepository _repository;
 
 
-        public ViewSellViewModel(IRegionManager regionManager) :
+        public ViewSellViewModel(IRegionManager regionManager, IEventAggregator eventAggregator) :
             base(regionManager)
         {
            
@@ -29,6 +32,7 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
             InsertThousandCommand = new DelegateCommand(() => InsertMoney(Money.ThousandRupee));
             ReturnMoneyCommand = new DelegateCommand(() => ReturnMoney());
             BuyWineCommand = new DelegateCommand<string>(BuyWine, WineAvailable);
+            eventAggregator.GetEvent<MoneyLoadedEvent>().Subscribe(OnMoneyLoaded);
 
             _repository = new VendingMachineRepository();
             _vendingMachine = _repository.GetById(1);
@@ -91,7 +95,7 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
         private void BuyWine(string channelID)
         {
             _vendingMachine.BuyWine(int.Parse(channelID));
-            Message = "";
+            Message = _message;
             MoneyInTransaction = "";
             MoneyInMachine = _vendingMachine.MoneyInMachine;
             _repository.Save(_vendingMachine);
@@ -100,6 +104,13 @@ namespace WineVendingMachine.Modules.SellWine.ViewModels
         private bool WineAvailable(string channelID)
         {
             return _vendingMachine.WineAvailable(int.Parse(channelID));
+        }
+
+        private void OnMoneyLoaded(EventMoney.Money emn)
+        {
+            Money money = new Money(emn.TenRupeeCount, emn.TwentyRupeeCount, emn.FiftyRupeeCount, emn.HundredRupeeCount, emn.FiveHundredRupeeCount, emn.HundredRupeeCount);
+            _vendingMachine.LoadMoney(money);
+            MoneyInMachine = _vendingMachine.MoneyInMachine;
         }
     }
 }

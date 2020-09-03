@@ -16,9 +16,11 @@
                 <RowDefinition Height="30"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Button Name="btnBuyWine" FontSize="15" Content="Buy Wine" Background="DeepPink" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="0"/>
-            <Button Name="btnMachineMgt" FontSize="15" Content="Machine Mgt" Background="DarkViolet" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1"/>
+            <Button FontSize="15" Content="Buy Wine" Background="DeepPink" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Command="{Binding NavigateCommand}" CommandParameter="ViewSell"/>
+            <Button FontSize="15" Content="Machine Mgt" Background="DarkViolet" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1" Command="{Binding NavigateCommand}" CommandParameter="ViewA"/>
         </Grid>
+
         <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" />
+
     </StackPanel>
 </Window>

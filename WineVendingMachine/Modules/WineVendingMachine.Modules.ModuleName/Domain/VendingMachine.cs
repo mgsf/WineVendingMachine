@@ -56,9 +56,12 @@ namespace WineVendingMachine.Modules.SellWine.Domain
                 //3-Make money in transaction zero
                 MoneyInTransaction = 0;
             }
-        } 
+        }
 
-
+        public virtual void LoadMoney(Money money) 
+        {
+            MoneyInMachine += money;
+        }
 
         /*
         public void LoadMoney() { }
