@@ -43,6 +43,7 @@ namespace WineVendingMachine.Modules.MachineMgt.ViewModels
         public void LoadMoney()
         {
             Money mn = new Money(TenRupeeNotes, TwentyRupeeNotes, FiftyRupeeNotes, HundredRupeeNotes, FiveHundredRupeeNotes, ThousandRupeeNotes);
+            //Do mapping
             EventMoney.Money emn = new EventMoney.Money(TenRupeeNotes, TwentyRupeeNotes, FiftyRupeeNotes, HundredRupeeNotes, FiveHundredRupeeNotes, ThousandRupeeNotes);
             _vendingMachine.InsertMoney(mn);
             MoneyInMachine = _vendingMachine.MoneyInMachine;

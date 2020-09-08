@@ -64,7 +64,7 @@ namespace WineVendingMachine.Modules.SellWine.Domain
         }
 
         /*
-        public void LoadMoney() { }
+        
 
         public void UnLoadMoney() { }
 
